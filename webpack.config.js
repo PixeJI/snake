@@ -14,7 +14,7 @@ const common = merge([
         entry: PATH.source + '/index.js',
         output: {
           path: PATH.build,
-          filename: '[name].js' ,
+          filename: '[name].js',
           publicPath: '/build/'
         },
         module: {
@@ -33,7 +33,7 @@ const common = merge([
         },
         plugins: [
           new htmlWebpackPlugin({
-            title: 'webpack test'
+            title: 'Snake'
           })
         ]
       }

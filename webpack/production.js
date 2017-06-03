@@ -4,8 +4,8 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = function () {
   return {
 
-    module:{
-      rules:[
+    module: {
+      rules: [
         {
           test: /\.css$/,
           exclude: /node_modules/,
@@ -15,9 +15,12 @@ module.exports = function () {
         }
       ],
     },
-    plugins:[
-      new webpack.optimize.UglifyJsPlugin({sourceMap: true}),
+    plugins: [
+      new webpack.optimize.UglifyJsPlugin(),
       new extractTextPlugin('styles/style.css'),
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify('production')
+      })
     ]
   }
 };

@@ -1,4 +1,15 @@
 {
-  "presets": ["es2015" , "react", "stage-2"],
-  "plugins": ["transform-class-properties"]
+  "presets": [
+    "es2015",
+    "react",
+    "stage-2"
+  ],
+  "env": {
+    "production": {
+      "presets": "react-optimize"
+    }
+  },
+  "plugins": [
+    "transform-class-properties"
+  ]
 }

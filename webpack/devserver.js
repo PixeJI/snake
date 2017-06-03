@@ -1,11 +1,12 @@
+const webpack = require('webpack');
 module.exports = function () {
   return {
-    module:{
-      rules:[
+    module: {
+      rules: [
         {
           test: /\.css$/,
           exclude: /node_modules/,
-          use: ['style-loader' , 'css-loader']
+          use: ['style-loader', 'css-loader']
         }
       ]
     },

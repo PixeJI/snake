@@ -2,7 +2,7 @@
 Simple Snake React
 
 
-DEMO: &nbsp;&nbsp;&nbsp; [click](https://pixeji.github.io/simple-react-snake/)
+DEMO: &nbsp;&nbsp;&nbsp; [click](https://pixeji.github.io/snake/)
 
 
 ### Installation

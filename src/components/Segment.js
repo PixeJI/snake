@@ -6,18 +6,11 @@ export default  class Segment extends React.Component {
   }
 
   render() {
-    const style = {
-      width: '17px',
-      height: '17px',
-      display: 'inline-block'
-    };
     const {snake, food} = this.props;
     const classSnake = snake ? 'snake-segment ' : '';
     const classFood = food ? 'food-segment ' : '';
     return (
-        <div className={classSnake + classFood} style={style}>
-
-        </div>
+        <div className={`segment ${classSnake} ${classFood}`}/>
     )
   }
 }

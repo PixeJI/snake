@@ -49,16 +49,24 @@ export  default class App extends React.Component {
   _onKeyDown = (event) => {
     switch (event.keyCode) {
       case 39:
-        this.setState({snakeDirection: Snake.direction.Right});
+        if (this.Snake.Direction !== Snake.direction.Left) {
+          this.setState({snakeDirection: Snake.direction.Right});
+        }
         break;
       case 40:
-        this.setState({snakeDirection: Snake.direction.Down});
+        if (this.Snake.Direction !== Snake.direction.Up) {
+          this.setState({snakeDirection: Snake.direction.Down});
+        }
         break;
       case 37:
-        this.setState({snakeDirection: Snake.direction.Left});
+        if (this.Snake.Direction !== Snake.direction.Right) {
+          this.setState({snakeDirection: Snake.direction.Left});
+        }
         break;
       case 38:
-        this.setState({snakeDirection: Snake.direction.Up});
+        if (this.Snake.Direction !== Snake.direction.Down) {
+          this.setState({snakeDirection: Snake.direction.Up});
+        }
         break;
     }
   };

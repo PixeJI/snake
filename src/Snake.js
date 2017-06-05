@@ -45,18 +45,10 @@ export default  class Snake {
   }
 
   set Direction(direction) {
-    if (this._direction === Snake.direction.Right && direction !== Snake.direction.Left) {
-      this._direction = direction;
-    }
-    if (this._direction === Snake.direction.Left && direction !== Snake.direction.Right) {
-      this._direction = direction;
-    }
-    if (this._direction === Snake.direction.Up && direction !== Snake.direction.Down) {
-      this._direction = direction;
-    }
-    if (this._direction === Snake.direction.Down && direction !== Snake.direction.Up) {
-      this._direction = direction;
-    }
+    this._direction = direction;
+  }
+  get  Direction(){
+    return this._direction;
   }
 
   eat(point) {

@@ -21,7 +21,11 @@ body {
     border: 1px solid black;
     background: lightgrey;
 }
-
+.segment{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+}
 .snake-segment {
     background-color: #807920;
     outline: 1px solid lightgrey ;
